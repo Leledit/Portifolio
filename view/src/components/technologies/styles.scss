@@ -25,6 +25,15 @@
     .techItens{
         margin-top: 40px;
     }
+    .descriptDesk{
+        display: none;
+    }
+}
+@media screen and (min-width:300px) {
+    .tech{
+        width: calc(100% - 80px);
+        margin-left: 40px;
+    }
 }
 @media screen and (min-width:400px) {
     .tech{
@@ -78,12 +87,11 @@
         margin-left: 0px;
         padding-bottom: 50px;
         h2{
-            width: 320px;
             word-break: break-all;
             font-size: 100px;
         }
         p{
-            padding-top: 100px;
+            padding-top: 20px;
             font-size: 20px;
             width: 500px;
             margin-left: 0px;           
@@ -91,8 +99,14 @@
         .techItens{
             width: 500px;
             margin-left: 0;
-            margin-bottom: 100px;
+            margin-bottom: 200px;
 
+        }
+        .descriptMob{
+            display: none;
+        }
+        .descriptDesk{
+            display: block;
         }
     }
 }

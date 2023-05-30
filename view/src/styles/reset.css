@@ -85,12 +85,8 @@ select {
 	font-family: inherit;
 }
 
-@font-face {
-    font-family: "Poppins";
-    src: url("../assets/fonts/Poppins-Regular.woff") format("woff2"),
-}
 
 body{
-    font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	background:rgba(46,45,45,1);
 }

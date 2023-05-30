@@ -45,43 +45,43 @@ export const Technologies = () => {
             textReduces: false,
         },
         {
-            id: 5,
+            id: 6,
             nome: 'React-native',
             img: imgReact,
             textReduces: true,
         },
         {
-            id: 6,
+            id: 7,
             nome: 'Figma',
             img: imgFigman,
             textReduces: false,
         },
         {
-            id: 7,
+            id: 8,
             nome: 'Git',
             img: imgGit,
             textReduces: false,
         },
         {
-            id: 8,
+            id: 9,
             nome: 'Firebase',
             img: imgFirebase,
             textReduces: false,
         },
         {
-            id: 9,
+            id: 10,
             nome: 'Android',
             img: imgAndroid,
             textReduces: false,
         },
         {
-            id: 10,
+            id: 11,
             nome: 'Mysql',
             img: imgMysql,
             textReduces: false,
         },
         {
-            id: 11,
+            id: 12,
             nome: 'WebPack',
             img: imgWebPack,
             textReduces: false,
@@ -92,9 +92,10 @@ export const Technologies = () => {
         <div>
             <h2>Tecnologias</h2>
             <div className='techBarra'></div>
+            <p className="descriptDesk">Essas são algumas das tecnologias que tenho experiência, ja as utilizando em projetos/trabalhos. sou uma pessoa aberta a aprender coisas novas, sempre buscando me atualizar, me basenado nas tendecias do mercado</p>
         </div>
         <div>
-            <p>Essas são algumas das tecnologias que tenho experiência, ja as utilizando em projetos/trabalhos. sou uma pessoa aberta a aprender coisas novas, sempre buscando me atualizar, me basenado nas tendecias do mercado</p>
+            <p className="descriptMob" >Essas são algumas das tecnologias que tenho experiência, ja as utilizando em projetos/trabalhos. sou uma pessoa aberta a aprender coisas novas, sempre buscando me atualizar, me basenado nas tendecias do mercado</p>
             <div className='techItens'>
                 {tecItens.map((item) => (
                      <Techitem title={item.nome} img={item.img} key={item.id} textReduces={item.textReduces} />
