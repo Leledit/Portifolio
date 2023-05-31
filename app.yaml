@@ -1,0 +1,12 @@
+runtime: nodejs16
+
+instance_class: F4_1G
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
+    redirect_http_response_code: 301
+
+automatic_scaling:
+  min_instances: 1

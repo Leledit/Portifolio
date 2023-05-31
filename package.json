@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd view && npm start",
     "server": "node server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "serverDev": "node serverDev.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run serverDev\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "concurrently": "^8.0.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6"
+    "http-proxy-middleware": "^2.0.6",
+    "path": "^0.12.7"
   }
 }
