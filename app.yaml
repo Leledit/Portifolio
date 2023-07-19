@@ -1,12 +1,43 @@
-runtime: nodejs16
+name: Build & Deploy Dev
 
-instance_class: F1
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment"
+        required: true
+        default: "dev"
 
-handlers:
-  - url: /.*
-    secure: always
-    script: auto
-    redirect_http_response_code: 301
+env:
+  PROJECT_NAME: portifolio
+  CI: false
 
-automatic_scaling:
-  min_instances: 1
+jobs:
+  build:
+    name: build & deploy dev
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: node install && build
+        shell: bash
+        run: |-
+          npm install
+
+      - name: react install && build
+        shell: bash
+        run: |-
+          cd ./view
+          npm install && npm run build
+          cp -r build ../
+          cd ../
+
+      - name: Deploy Dev
+        uses: google-github-actions/deploy-appengine@v0.2.0
+        with:
+          deliverables: app-dev.yaml
+          credentials: ${{ secrets.GCLOUD_SA_KEY_DEV }}
+          project_id: ${{ secrets.GCLOUD_PROJECT_ID_DEV }}
+          promote: true
+          version: ${{ github.run_number}}-${{ github.run_id }}-development
