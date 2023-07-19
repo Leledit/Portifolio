@@ -36,7 +36,7 @@ jobs:
       - name: Deploy Dev
         uses: google-github-actions/deploy-appengine@v0.2.0
         with:
-          deliverables: app-dev.yaml
+          deliverables: app.yaml
           credentials: ${{ secrets.GCLOUD_SA_KEY}}
           project_id: ${{ secrets.GCLOUD_PROJECT_ID}}
           promote: true
