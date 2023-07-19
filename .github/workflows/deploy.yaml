@@ -20,12 +20,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: login google
-        shell: bash
-        run: |-
-          gcloud config list
-          gcloud auth login
-
       - name: node install && build
         shell: bash
         run: |-
