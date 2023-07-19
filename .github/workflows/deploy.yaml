@@ -25,7 +25,6 @@ jobs:
         run: |-
           gcloud config list
           gcloud auth login
-          4/0AZEOvhXKt7li11oBb8YgZ3GUhBLhDMWcVSM3JCLHWRWMiBvKq10BTgiOSLQcZdeZ3gMZyw
 
       - name: node install && build
         shell: bash
