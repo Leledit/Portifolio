@@ -1,24 +1,43 @@
-name: build && deploy 
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+name: Build & Deploy Dev
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment"
+        required: true
+        default: "dev"
+
+env:
+  PROJECT_NAME: portifolio
+  CI: false
+
 jobs:
   build:
-    name: build
+    name: build & deploy dev
     runs-on: ubuntu-latest
     steps:
-      - name: Conferir o repositorio
+      - name: Check out repository
         uses: actions/checkout@v3
-      
-      - name: Instalar o node
-        uses: node install 
 
+      - name: node install && build
+        shell: bash
+        run: |-
+          npm install
 
-  #check-bats-version:
-   # runs-on: ubuntu-latest
-    #steps:
-    #  - uses: actions/checkout@v3
-    #  - uses: actions/setup-node@v3
-   #     with:
-   #       node-version: '14'
-   #   - run: npm install -g bats
-   #   - run: bats -v
+      - name: react install && build
+        shell: bash
+        run: |-
+          cd ./view
+          npm install && npm run build
+          cp -r build ../
+          cd ../
+
+      - name: Deploy Dev
+        uses: google-github-actions/deploy-appengine@v0.2.0
+        with:
+          deliverables: app-dev.yaml
+          credentials: ${{ secrets.GCLOUD_SA_KEY_DEV }}
+          project_id: ${{ secrets.GCLOUD_PROJECT_ID_DEV }}
+          promote: true
+          version: ${{ github.run_number}}-${{ github.run_id }}-development
