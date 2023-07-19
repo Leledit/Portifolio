@@ -15,7 +15,7 @@ Um outro motivo para a criação desse projeto é de treinar o uso de react em u
 
 Para iniciar o projeto, devemos seguir alguns passos:
 
-* O projeto deve ser clonado em: `git@github.com:Leledit/laurypage.git`;
+* O projeto deve ser clonado em: `git@github.com:Leledit/Portifolio.git`;
 * Deve ser usado o comando `npm install` na pasta raiz do projeto;
 * Devemos acessar a pasta `~./view/'` e executar o comando `npm install`;
 * Para iniciar a aplicação, devemos rodar o comando `npm run dev` na pasta raiz;
