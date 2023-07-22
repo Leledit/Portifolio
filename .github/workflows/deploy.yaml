@@ -36,12 +36,9 @@ jobs:
       - name: deleting development files
         shell: bash
         run: |-
-          echo 'apagando pasta "node_modules(servidor)"'
           rm -r ./node_modules
-          echo 'apagando pasta contendo o visual da aplicação'
           rm -r ./view
           echo 'mostrando arquivos que serão enviados ao app engine'
-          gcloud beta app describe
       
       - name: Deploy Dev
         uses: google-github-actions/deploy-appengine@v0.2.0
