@@ -39,6 +39,7 @@ jobs:
           rm -r ./node_modules
           rm -r ./view
           echo 'mostrando arquivos que serão enviados ao app engine'
+          ls
       
       - name: Deploy Dev
         uses: google-github-actions/deploy-appengine@v0.2.0

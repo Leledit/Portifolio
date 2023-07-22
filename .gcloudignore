@@ -17,4 +17,4 @@
 node_modules/
 
 # Pasta principal do projeto
-./view
+view
