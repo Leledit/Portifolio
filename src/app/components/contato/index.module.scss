@@ -1,0 +1,109 @@
+.contat {
+  background: url("/img/contact/mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  clear: both;
+  .contatInfo {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    padding-top: 120px;
+
+    .contatTitles {
+      color: rgba(255, 255, 255, 1);
+      font-size: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .contatBarra {
+      height: 10px;
+      width: 200px;
+      margin-left: calc(50% - 100px);
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 2px 8px 10px 2px rgba(153, 153, 153, 0.25);
+      margin-bottom: 100px;
+    }
+    .contatItem {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 1);
+      line-height: 40px;
+      margin-bottom: 70px;
+      a:hover {
+        color: #ff7a7a;
+      }
+    }
+    .contatNumber {
+      .contatNumberImg {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+        height: 86px;
+        padding-bottom: 190px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 429px) {
+  .contat {
+    background: url("/img/contact/tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .contatInfo {
+      .contatNumber {
+        .contatNumberImg {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 720px) {
+  .contat {
+    .contatInfo {
+      width: 700px;
+      margin-left: calc(50% - 350px);
+      .contatItem {
+        font-size: 26px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .contat {
+    background: url("/img/contact/desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .contatInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-left: 0px;
+      .contatNumber {
+        .contatNumberImg {
+          margin-top: 150px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .contat {
+    background: url("/img/contact/desktopFull.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .contatInfo {
+      width: calc(100% - 400px);
+      margin-left: 200px;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .contat {
+    width: 1900px;
+    margin-left: calc(50% - 950px);
+  }
+}

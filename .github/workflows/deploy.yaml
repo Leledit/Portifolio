@@ -20,26 +20,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: node install && build
+      - name: Installation of dependencies
         shell: bash
         run: |-
           npm install
 
-      - name: react install && build
+      - name: generating build files
         shell: bash
         run: |-
-          cd ./view
-          npm install && npm run build
-          cp -r build ../
-          cd ../
-
-      - name: deleting development files
-        shell: bash
-        run: |-
-          rm -r ./node_modules
-          rm -r ./view
-          echo 'mostrando arquivos que serão enviados ao app engine'
-          ls
+          npm run build
       
       - name: Deploy Dev
         uses: google-github-actions/deploy-appengine@v0.2.0

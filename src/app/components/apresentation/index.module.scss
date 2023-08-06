@@ -1,0 +1,196 @@
+.apresentation {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-top: 36px;
+  .apreInfo {
+    .apreInfoTitle {
+      font-size: 26px;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      width: 250px;
+      margin-left: calc(50% - 125px);
+      line-height: 40px;
+    }
+    .apreImgMobTab {
+      background-image: url("/img/apresentation/mobile.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 300px;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    .apreProgramFullStack {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .paragrafFullStack {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+        margin-left: 16px;
+      }
+    }
+    .apreProgramMobile {
+      justify-content: right;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .paragarfMobile {
+        margin-right: 16px;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .imgDetail {
+      width: 15px;
+      height: 80px;
+    }
+    .apreLink {
+      width: 90%;
+      margin-left: 5%;
+      height: 80px;
+      display: block;
+      background: #717171;
+      border-radius: 20px;
+      line-height: 80px;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 58px;
+      font-weight: 700;
+      text-align: center;
+      filter: drop-shadow(4px 4px 4px rgba(112, 112, 112, 0.4));
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .apresentation {
+    .apreImgMobTab {
+      width: 390px;
+      margin-left: calc(50% - 195px);
+      height: 390px;
+    }
+    .apreProgramFullStack {
+      .paragrafFullStack {
+        font-size: 24px;
+      }
+    }
+    .apreProgramMobile {
+      .paragarfMobile {
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 429px) {
+  .apresentation {
+    width: calc(100% - 100px);
+    margin-left: 50px;
+    .apreInfo {
+      width: 390px;
+      margin-left: calc(50% - 195px);
+      .apreInfoTitle {
+        width: 100%;
+        margin-left: 0px;
+      }
+      .apreImgMobTab {
+        background-image: url("/img/apresentation/tablet.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        margin-left: 0px;
+      }
+      .apreLink {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 620px) {
+  .apresentation {
+    width: 600px;
+    margin-left: calc(50% - 300px);
+    .apreInfo {
+      width: 480px;
+      margin-left: calc(50% - 240px);
+      .apreInfoTitle {
+        font-size: 42px;
+        margin-top: 65px;
+        margin-bottom: 61px;
+      }
+      .apreLink {
+        margin-left: 0px;
+      }
+      .apreImgMobTab {
+        height: 500px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .apresentation {
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .apreInfo {
+      width: 400px;
+      margin-left: 0px;
+      .apreInfoTitle {
+        line-height: 80px;
+        margin-bottom: 80px;
+      }
+      .apreLink {
+        width: 380px;
+        margin-left: 0px;
+      }
+      .apreImgMobTab {
+        display: none;
+      }
+    }
+  }
+  .apreImgDesk {
+    background-image: url("/img/apresentation/desktop.png");
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .apreImgDesk {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .apreImgDesk {
+    width: 480px;
+    height: 500px;
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .apreImgDesk {
+    background-image: url("/img/apresentation/desktopFull.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 650px;
+    height: 600px;
+  }
+  .apresentation {
+    width: calc(100% - 400px);
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .apresentation {
+    width: 1500px;
+    margin-left: calc(50% - 750px);
+  }
+}

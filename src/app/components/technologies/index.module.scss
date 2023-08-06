@@ -1,0 +1,154 @@
+.tech {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  .techInfo {
+    .techInfoTitle {
+      margin-bottom: 40px;
+      font-size: 40px;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      padding-top: 45px;
+    }
+    .techBarra {
+      height: 20px;
+      width: 200px;
+      margin-left: calc(50% - 100px);
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 2px 8px 10px 2px rgba(153, 153, 153, 0.25);
+      margin-bottom: 40px;
+    }
+    .descriptDesk {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 1);
+      display: none;
+    }
+  }
+  .techContentItens {
+    .techItens {
+      margin-top: 40px;
+    }
+    .descriptMob {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  .tech {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .tech {
+    .techInfo {
+      .techInfoTitle {
+        font-size: 50px;
+      }
+      .techBarra {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+      }
+    }
+    .techContentItens {
+      .techItens {
+        width: 400px;
+        margin-left: calc(50% - 200px);
+      }
+    }
+  }
+}
+@media screen and (min-width: 720px) {
+  .tech {
+    width: 700px;
+    margin-left: calc(50% - 350px);
+    .techInfo {
+      .techInfoTitle {
+        font-size: 80px;
+      }
+    }
+    .techContentItens {
+      .techItens {
+        width: 700px;
+        margin-left: calc(50% - 350px);
+      }
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .tech {
+    width: 780px;
+    margin-left: calc(50% - 390px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .tech {
+    .techInfo {
+      .techInfoTitle {
+        padding-top: 80px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 50px;
+    .techInfo {
+      .techInfoTitle {
+        word-break: break-all;
+        font-size: 100px;
+      }
+      .descriptDesk {
+        padding-top: 20px;
+        font-size: 20px;
+        width: 500px;
+        margin-left: 0px;
+        display: block;
+      }
+    }
+    .techContentItens {
+      .techItens {
+        width: 500px;
+        margin-left: 0;
+        margin-bottom: 200px;
+      }
+      .descriptMob {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .tech {
+    width: calc(100% - 400px);
+    margin-left: 200px;
+    padding-bottom: 100px;
+    .techInfo {
+      .descriptDesk {
+        width: 700px;
+      }
+    }
+    .techContentItens {
+      .techItens {
+        width: 700px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1900px) {
+  .tech {
+    width: 1500px;
+    margin-left: calc(50% - 750px);
+  }
+}

@@ -1,24 +1,23 @@
 {
   "name": "portifolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "type": "module",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "cd view && npm start",
-    "server": "node server.js",
-    "serverDev": "node serverDev.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run serverDev\" \"npm run client\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.0.1",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6",
-    "path": "^0.12.7"
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.64.2",
+    "typescript": "5.1.6"
   }
 }
