@@ -1,7 +1,7 @@
-"use client";
+"use client"; 
 import React, { useState } from "react";
 import styles from "./index.module.scss";
-import imgMenu from "../../../../public/img/menu.png";
+import imgMenu from "../../../../public/img/menu.webp";
 import Image from "next/image";
 
 export function Menu() {
