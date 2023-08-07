@@ -9,7 +9,7 @@
 
 Este projeto consiste em uma única página, que basicamente fala sobre min, meu trabalho e como podem entrar em contato comigo. a função principal dessa página é fazer uma espécie de divulgação sobre min no meio da informática.
 
-Um outro motivo para a criação desse projeto é de treinar o uso de react em um projeto real, hospedado em um servidor(google).
+Um outro motivo para a criação desse projeto é de treinar o uso de nextJs em um projeto real, hospedado em um servidor(google). Este é o primeiro projeto que trabalho usando essa tecnologia
 
 # Iniciando o projeto #
 
@@ -17,15 +17,12 @@ Para iniciar o projeto, devemos seguir alguns passos:
 
 * O projeto deve ser clonado em: `git@github.com:Leledit/Portifolio.git`;
 * Deve ser usado o comando `npm install` na pasta raiz do projeto;
-* Devemos acessar a pasta `~./view/'` e executar o comando `npm install`;
-* Para iniciar a aplicação, devemos rodar o comando `npm run dev` na pasta raiz;
+* Devemos executar o comando `npm run dev`, afim de iniciar a aplicação
 * Agora abra um navegador de sua preferencia e digite `http://localhost:3000/`;
 
 # Tecnicas e tecnologias usadas #
 
-* concurrently ^8.0.1 (Biblioteca)
-* cors ^2.8.5 (Biblioteca)
-* express ^4.18.2 (Biblioteca)
-* http-proxy-middleware  ^2.0.6(Biblioteca)
+* Next ^13.4.12
 * react ^18.2.0
+* typescript ^5.1.6
 * sass ^1.58.3
