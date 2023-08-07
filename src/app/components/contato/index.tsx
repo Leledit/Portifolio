@@ -1,5 +1,5 @@
 import React from "react";
-import imgWhatsApp from "../../../../public/img/whatsLogo.png";
+import imgWhatsApp from "../../../../public/img/whatsLogo.webp";
 import styles from "./index.module.scss";
 import Image from "next/image";
 export function Contato() {

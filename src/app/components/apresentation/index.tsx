@@ -1,5 +1,5 @@
 import React from "react";
-import imgApreDetail from "../../../../public/img/apresentation/detail.png";
+import imgApreDetail from "../../../../public/img/apresentation/detail.webp";
 import styles from "./index.module.scss";
 import Image from "next/image";
 export function Apresentation() {

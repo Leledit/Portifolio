@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./index.module.scss";
-import imgProjOne from "../../../../public/img/projects/one.png";
-import imgProjtwo from "../../../../public/img/projects/two.png";
-import imgProjTree from "../../../../public/img/projects/thee.png";
-import imgProjFour from "../../../../public/img/projects/four.png";
-import imgProFive from "../../../../public/img/projects/five.png";
+import imgProjOne from "../../../../public/img/projects/one.webp";
+import imgProjtwo from "../../../../public/img/projects/two.webp";
+import imgProjTree from "../../../../public/img/projects/thee.webp";
+import imgProjFour from "../../../../public/img/projects/four.webp";
+import imgProFive from "../../../../public/img/projects/five.webp";
 import ProjItem from "./item";
 
 export function Project() {

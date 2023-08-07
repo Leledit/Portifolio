@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   clear: both;
-  background-image: url("/img/about/mobile.png");
+  background-image: url("/img/about/mobile.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,7 +39,7 @@
 }
 @media screen and (min-width: 429px) {
   .about {
-    background-image: url("/img/about/tablet.png");
+    background-image: url("/img/about/tablet.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,7 +71,7 @@
 }
 @media screen and (min-width: 992px) {
   .about {
-    background-image: url("/img/about/desktop.png");
+    background-image: url("/img/about/desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -115,7 +115,7 @@
 }
 @media screen and (min-width: 1500px) {
   .about {
-    background-image: url("/img/about/desktopFull.png");
+    background-image: url("/img/about/desktopFull.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
